@@ -2,6 +2,7 @@
   "Records": [
     {
       "Sns": {
+        "MessageId": "orderreceipt",
         "Message": {
           "purchase": {
             "buyer_id": "mariano3"
