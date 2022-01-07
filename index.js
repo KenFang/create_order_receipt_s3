@@ -1,14 +1,14 @@
 const AWS = require('aws-sdk');
 
 let s3 = new AWS.S3({
-  accessKeyId: 'YOUR_ACCESS_KEY_ID',
-  secretAccessKey: 'YOUR_SECRET_ACCESS_KEY'
+  accessKeyId: 'MY_ACCESS_KEY_ID',
+  secretAccessKey: 'MY_SECRET_ACCESS_KEY'
 });
 
 async function createOrderReceipt(message_id, message) {
-    let s3Bucket = 'YOUR_BUCKET';
+    let s3Bucket = 'MY_BUKET';
     let objectKey = `${message_id}.json`;
-    let objectData = JSON.stringify(message);
+    let objectData = message;
     let objectType = 'application/json';
 
     try {
